@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Игорь Рихтер](https://up.htmlacademy.ru/htmlcss/38/user/2408769).
-* Наставник: `Неизвестно`.
+- Студент: [Игорь Рихтер](https://up.htmlacademy.ru/htmlcss/38/user/2408769).
+- Наставник: `Александр Медведев`(https://htmlacademy.ru/profile/exteep).
 
 ---
 
