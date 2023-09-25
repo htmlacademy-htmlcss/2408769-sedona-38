@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
           <img class="page-header-logo" alt="Логотип сайта Седона" src="#" />
@@ -40,12 +40,12 @@
         </div>
       </nav>
     </header>
-    <main class="main-index">
-      <section class="hero">
+    <main class="main-index" data-test="main">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой</h1>
         <img class="hero-image" alt="Пейзажи Седоны" src="#" />
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
@@ -114,7 +114,7 @@
           </li>
         </ul>
       </section>
-      <section class="search">
+      <section class="search" data-test="search">
         <h2>Заинтересовались?</h2>
         <p>
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
@@ -124,22 +124,20 @@
           <a class="button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </div>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="search-email" required/>
             <button class="button button-search" type="submit">
               Подписаться
             </button>
-          </label>
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer" >
       <section class="footer-social">
         <ul class="social-list">
           <li class="social-item">

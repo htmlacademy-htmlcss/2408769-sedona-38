@@ -41,7 +41,7 @@
     </nav>
   </header>
   <main class="main-catalog">
-    <section class="filters">
+    <section class="filters" data-test="filter">
       <header class="filters-header">
         <h1 class="filters-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
@@ -106,10 +106,8 @@
         </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-          <label>
             <input type="number" name="cost" placeholder="от" value="0">
             <input type="number" name="cost" placeholder="до" value="9000">
-          </label>
         </fieldset>
         <div class="filters-button">
           <button class="button button-apply" type="submit" name="apply">Применить</button>
@@ -137,7 +135,7 @@
         <span class="visually-hidden">Показать список</span>
       </a>
     </section>
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
@@ -241,22 +239,20 @@
         </li>
       </ul>
     </section>
-    <section class="subscribe">
+    <section class="subscribe" data-test="subscribe">
       <h2>Подпишитесь на рассылку</h2>
       <p>
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="search-email" required/>
           <button class="button button-search" type="submit">
             Подписаться
           </button>
-        </label>
       </form>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer" data-test="footer" >
     <section class="footer-social">
       <ul class="social-list">
         <li class="social-item">
