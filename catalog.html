@@ -111,9 +111,31 @@
             <input class="price-input" type="number" name="cost" placeholder="до" value="9000">
           </label>
         </fieldset>
-        <button class="button button-apply" type="submit" name="apply">Применить</button>
-        <button class="button button-reset" type="submit" name="reset">Сбросить</button>
+        <div class="filters-button">
+          <button class="button button-apply" type="submit" name="apply">Применить</button>
+          <button class="button button-reset" type="reset" name="reset">Сбросить</button>
+        </div>
       </form>
+    </section>
+    <section class="catalog-control">
+      <h2>Найдено гостиниц: 38</h2>
+      <select class="select-control" aria-label="Сортировка">
+        <option value="cheap">Сначала дешёвое</option>
+        <option value="popular">Сначала популярное</option>
+        <option value="expensive">Сначала дорогое</option>
+      </select>
+      <a href="#" class="button button-active">
+        <img class="navigation-favorites" alt="Показать карточки" src="#" />
+        <span class="visually-hidden">Показать карточки</span>
+      </a>
+      <a class="button" href="#">
+        <img class="navigation-favorites" alt="Cлайд-шоу" src="#" />
+        <span class="visually-hidden">Cлайд-шоу</span>
+      </a>
+      <a href="#" class="button">
+        <img class="navigation-favorites" alt="Показать список" src="#" />
+        <span class="visually-hidden">Показать список</span>
+      </a>
     </section>
     <section class="subscribe">
       <h2>Подпишитесь на рассылку</h2>
