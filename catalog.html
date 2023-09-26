@@ -5,20 +5,20 @@
   <title>HTML Academy: Седона</title>
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header" data-test="header">
+    <a class="navigation-logo" href="index.html">
+      <img class="page-header-logo" alt="Логотип сайта Седона" src="#" />
+    </a>
     <nav class="navigation">
-      <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" alt="Логотип сайта Седона" src="#" />
-      </a>
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link-currect" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">О седоне</a>
+          <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -106,8 +106,10 @@
         </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <div class="cost-regulator">
             <input type="number" name="cost" placeholder="от" value="0">
             <input type="number" name="cost" placeholder="до" value="9000">
+          </div>
         </fieldset>
         <div class="filters-button">
           <button class="button button-apply" type="submit" name="apply">Применить</button>
@@ -115,107 +117,113 @@
         </div>
       </form>
     </section>
-    <section class="catalog-control">
+    <section class="catalog" data-test="catalog">
       <h2>Найдено гостиниц: 38</h2>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвое</option>
         <option value="popular">Сначала популярное</option>
         <option value="expensive">Сначала дорогое</option>
       </select>
-      <a href="#" class="button button-active">
+      <button type="submit" class="button button-active" name="cards">
         <img class="select-control-icon" alt="Показать карточки" src="#" />
         <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a class="button" href="#">
+      </button>
+      <button type="submit" class="button" name="slide">
         <img class="select-control-icon" alt="Cлайд-шоу" src="#" />
         <span class="visually-hidden">Cлайд-шоу</span>
-      </a>
-      <a href="#" class="button">
+      </button>
+      <button type="submit" class="button" name="list">
         <img class="select-control-icon" alt="Показать список" src="#" />
         <span class="visually-hidden">Показать список</span>
-      </a>
-    </section>
-    <section class="catalog" data-test="catalog">
+      </button>
       <ul class="hotel-list">
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Гостиница Amara Resort & Spa">
-            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-          </a>
-          <p>
-            <span>Гостиница</span>
-            <span class="price">От 4000 ₽</span>
-          </p>
-          <div class="hotel-card-button-wrapper">
-            <a class="button" href="#">подробнее</a>
-            <button class="button button-favorites" type="submit">в избранное</button>
-          </div>
-          <div class="hotel-card-stars">
-            <span class="visually-hidden">4 звезды</span>
-          </div>
-          <div class="hotel-card-rating">
-            <span class="visually-hidden">Рейтинг: 8,5</span>
-          </div>
+        <li class="hotel-item">
+          <article class="hotel-card">
+            <a class="hotel-card-link" href="#">
+              <img class="hotel-card-image" src="#" alt="Гостиница Amara Resort & Spa">
+              <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+            </a>
+            <p>
+              <span>Гостиница</span>
+              <span class="price">От 4000 ₽</span>
+            </p>
+            <div class="hotel-card-button-wrapper">
+              <a class="button" href="#">подробнее</a>
+              <button class="button button-favorites" type="submit">в избранное</button>
+            </div>
+            <div class="hotel-card-stars">
+              <span class="visually-hidden">4 звезды</span>
+            </div>
+            <div class="hotel-card-rating">
+              <span class="visually-hidden">Рейтинг: 8,5</span>
+            </div>
+          </article>
         </li>
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Гостиница Villas at Poco Diablo">
-            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-          </a>
-          <p>
-            <span>Гостиница</span>
-            <span class="price">От 5000 ₽</span>
-          </p>
-          <div class="hotel-card-button-wrapper">
-            <a class="button" href="#">подробнее</a>
-            <button class="button button-favorites-active" type="submit">в избранное</button>
-          </div>
-          <div class="hotel-card-stars">
-            <span class="visually-hidden">4 звезды</span>
-          </div>
-          <div class="hotel-card-rating">
-            <span class="visually-hidden">Рейтинг: 9,2</span>
-          </div>
+        <li class="hotel-item">
+          <article class="hotel-card">
+            <a class="hotel-card-link" href="#">
+              <img class="hotel-card-image" src="#" alt="Гостиница Villas at Poco Diablo">
+              <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <p>
+              <span>Гостиница</span>
+              <span class="price">От 5000 ₽</span>
+            </p>
+            <div class="hotel-card-button-wrapper">
+              <a class="button" href="#">подробнее</a>
+              <button class="button button-favorites-active" type="submit">в избранное</button>
+            </div>
+            <div class="hotel-card-stars">
+              <span class="visually-hidden">4 звезды</span>
+            </div>
+            <div class="hotel-card-rating">
+              <span class="visually-hidden">Рейтинг: 9,2</span>
+            </div>
+          </article>
         </li>
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Гостиница Desert Quail Inn">
-            <h3 class="hotel-card-title">Desert Quail Inn</h3>
-          </a>
-          <p>
-            <span>Гостиница</span>
-            <span class="price">От 2500 ₽</span>
-          </p>
-          <div class="hotel-card-button-wrapper">
-            <a class="button" href="#">подробнее</a>
-            <button class="button button-favorites" type="submit">в избранное</button>
-          </div>
-          <div class="hotel-card-stars">
-            <span class="visually-hidden">3 звезды</span>
-          </div>
-          <div class="hotel-card-rating">
-            <span class="visually-hidden">Рейтинг: 6,9</span>
-          </div>
+        <li class="hotel-item">
+          <article class="hotel-card">
+            <a class="hotel-card-link" href="#">
+              <img class="hotel-card-image" src="#" alt="Гостиница Desert Quail Inn">
+              <h3 class="hotel-card-title">Desert Quail Inn</h3>
+            </a>
+            <p>
+              <span>Гостиница</span>
+              <span class="price">От 2500 ₽</span>
+            </p>
+            <div class="hotel-card-button-wrapper">
+              <a class="button" href="#">подробнее</a>
+              <button class="button button-favorites" type="submit">в избранное</button>
+            </div>
+            <div class="hotel-card-stars">
+              <span class="visually-hidden">3 звезды</span>
+            </div>
+            <div class="hotel-card-rating">
+              <span class="visually-hidden">Рейтинг: 6,9</span>
+            </div>
+          </article>
         </li>
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Гостиница GreenTree Inn">
-            <h3 class="hotel-card-title">GreenTree Inn</h3>
-          </a>
-          <p>
-            <span>Гостиница</span>
-            <span class="price">От 1500 ₽</span>
-          </p>
-          <div class="hotel-card-button-wrapper">
-            <a class="button" href="#">подробнее</a>
-            <button class="button button-favorites" type="submit">в избранное</button>
-          </div>
-          <div class="hotel-card-stars">
-            <span class="visually-hidden">2 звезды</span>
-          </div>
-          <div class="hotel-card-rating">
-            <span class="visually-hidden">Рейтинг: 5,0</span>
-          </div>
+        <li class="hotel-item">
+          <article class="hotel-card">
+            <a class="hotel-card-link" href="#">
+              <img class="hotel-card-image" src="#" alt="Гостиница GreenTree Inn">
+              <h3 class="hotel-card-title">GreenTree Inn</h3>
+            </a>
+            <p>
+              <span>Гостиница</span>
+              <span class="price">От 1500 ₽</span>
+            </p>
+            <div class="hotel-card-button-wrapper">
+              <a class="button" href="#">подробнее</a>
+              <button class="button button-favorites" type="submit">в избранное</button>
+            </div>
+            <div class="hotel-card-stars">
+              <span class="visually-hidden">2 звезды</span>
+            </div>
+            <div class="hotel-card-rating">
+              <span class="visually-hidden">Рейтинг: 5,0</span>
+            </div>
+          </article>
         </li>
       </ul>
       <ul class="pagination">
@@ -253,7 +261,7 @@
     </section>
   </main>
   <footer class="page-footer" data-test="footer" >
-    <section class="footer-social">
+    <div class="footer-social">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
@@ -271,11 +279,15 @@
           </a>
         </li>
       </ul>
-    </section>
-    <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <a class="footer-logo" href="https://htmlacademy.ru/">
-      <img class="page-footer-logo" alt="Логотип HTML академии" src="#" />
-    </a>
+    </div>
+    <div class="footer-phone">
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    </div>
+    <div class="footer-logo">
+      <a href="https://htmlacademy.ru/">
+        <img class="page-footer-logo" alt="Логотип HTML академии" src="#" />
+      </a>
+    </div>
   </footer>
 </body>
 </html>
