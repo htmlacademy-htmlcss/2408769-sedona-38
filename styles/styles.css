@@ -48,7 +48,8 @@ body {
 .hero {
   color: black;
   background-color: white;
-  background-image: url("../images/index/divider.svg"), url("../images/index/sedona-mountains.jpg");
+  background-image: url("../images/index/divider.svg"),
+    url("../images/index/sedona-mountains.jpg");
   background-position: bottom, center;
   background-size: contain, cover;
   background-repeat: no-repeat;
@@ -61,7 +62,8 @@ body {
   margin: 0 auto;
 }
 
-.advantages h2, .services h2 {
+.advantages h2,
+.services h2 {
   color: black;
   font-weight: 700;
   font-size: 30px;
@@ -70,23 +72,26 @@ body {
   text-align: center;
 }
 
-.advantages-text-p, .services-text-p {
+.advantages-text-p,
+.services-text-p {
   color: #333;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
 
-.advantages-item:first-child .item-text-box, .advantages-item:last-child .item-text-box {
-  background-color: #82B3D3;
+.advantages-item:first-child .item-text-box,
+.advantages-item:last-child .item-text-box {
+  background-color: #82b3d3;
 }
 
-.advantages-item:nth-child(2) .item-text-box, .advantages-item:nth-child(4) .item-text-box {
-  background-color: #83B3D31F;
+.advantages-item:nth-child(2) .item-text-box,
+.advantages-item:nth-child(4) .item-text-box {
+  background-color: #83b3d31f;
 }
 
-.advantages-item:nth-child(3) .item-text-box{
-  background-color: #83B3D333;
+.advantages-item:nth-child(3) .item-text-box {
+  background-color: #83b3d333;
 }
 
 .advantages-title {
@@ -102,6 +107,7 @@ body {
   text-align: center;
 }
 
-.description-white, .title-white {
+.description-white,
+.title-white {
   color: white;
 }
