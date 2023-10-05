@@ -45,6 +45,7 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .search-button {
@@ -56,7 +57,24 @@ body {
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
+  border-width: 0;
+  border-radius: 0 4px 4px 0;
 }
+
+.button-apply, .button-favorites {
+  background-color: #82B3D3;
+  border-width: 0;
+}
+
+.button-reset {
+  background-color: transparent;
+  border-width: 0;
+}
+
+.button-view {
+  background-color: white;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -175,7 +193,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  opacity: 0.6;
+  color: black;
 }
 
 .phone {
@@ -188,4 +206,114 @@ body {
 
 .social-link {
   text-decoration: none;
+}
+
+.filters {
+  background-image: url("../images/catalog/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1200px;
+}
+
+.filters-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  color: white;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+  color: white;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.control {
+  line-height: 23px;
+  color: white;
+}
+
+.catalog h2{
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+  background-color: white;
+}
+
+.hotel-card-link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration: none;
+  color: #333;
+}
+
+.price {
+  text-align: right;
+  color: #333;
+}
+
+.hotel-card-rating {
+  background-color: #F2F2F2;
+}
+
+.hotel-card-rating span {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;
+}
+
+
+.pagination-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: #82B3D3;
+}
+
+.pagination-item:first-child .pagination-link {
+  background-color: #F2F2F2;
+  color: black;
+}
+
+.pagination-item:nth-child(5) .pagination-link {
+  background-color: white;
+  color: black;
+}
+
+.subscribe-catalog h2{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subsribe-catalog-description {
+  color: black;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }

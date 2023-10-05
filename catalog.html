@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="page-header" data-test="header">
@@ -12,13 +13,13 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link-currect" href="index.html">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link">Гостиницы</a>
+          <a class="navigation-link navigation-link-currect">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -124,15 +125,15 @@
         <option value="popular">Сначала популярное</option>
         <option value="expensive">Сначала дорогое</option>
       </select>
-      <button type="submit" class="button button-active" name="tile">
+      <button type="submit" class="button-view button-view-active" name="tile">
         <img class="select-control-icon" alt="Показать карточки" src="images/catalog/tile.svg" width="20" height="20" />
         <span class="visually-hidden">Показать карточки</span>
       </button>
-      <button type="submit" class="button" name="slide">
+      <button type="submit" class="button-view" name="slide">
         <img class="select-control-icon" alt="Cлайд-шоу" src="images/catalog/slideshow.svg" width="20" height="20" />
         <span class="visually-hidden">Cлайд-шоу</span>
       </button>
-      <button type="submit" class="button" name="list">
+      <button type="submit" class="button-view" name="list">
         <img class="select-control-icon" alt="Показать список" src="images/catalog/list.svg" width="20" height="20" />
         <span class="visually-hidden">Показать список</span>
       </button>
@@ -156,7 +157,7 @@
               <img class="stars stars-4" src="images/catalog/star.svg" width="18" height="17" alt="Гостиница GreenTree Inn">
             </div>
             <div class="hotel-card-rating">
-              <span class="visually-hidden">Рейтинг: 8,5</span>
+              <span>Рейтинг: 8,5</span>
             </div>
           </article>
         </li>
@@ -179,7 +180,7 @@
               <img class="stars stars-4" src="images/catalog/star.svg" width="18" height="17" alt="Гостиница GreenTree Inn">
             </div>
             <div class="hotel-card-rating">
-              <span class="visually-hidden">Рейтинг: 9,2</span>
+              <span>Рейтинг: 9,2</span>
             </div>
           </article>
         </li>
@@ -202,7 +203,7 @@
               <img class="stars stars-3" src="images/catalog/star.svg" width="18" height="17" alt="Гостиница GreenTree Inn">
             </div>
             <div class="hotel-card-rating">
-              <span class="visually-hidden">Рейтинг: 6,9</span>
+              <span>Рейтинг: 6,9</span>
             </div>
           </article>
         </li>
@@ -225,7 +226,7 @@
               <img class="stars stars-2" src="images/catalog/star.svg" width="18" height="17" alt="Гостиница GreenTree Inn">
             </div>
             <div class="hotel-card-rating">
-              <span class="visually-hidden">Рейтинг: 5,0</span>
+              <span>Рейтинг: 5,0</span>
             </div>
           </article>
         </li>
@@ -243,22 +244,20 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">4</a>
         </li>
-        <li class="pagination-item">
+        <li class="pagination-item pagination-dots">
           <a class="pagination-link" href="#">...</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-points" href="#">10</a>
+          <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
     </section>
-    <section class="subscribe" data-test="subscribe">
+    <section class="subscribe-catalog" data-test="subscribe">
       <h2>Подпишитесь на рассылку</h2>
-      <p>
-        Только полезная информация и никакого спама, честное бойскаутское!
-      </p>
+      <p class="subsribe-catalog-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="search-email" required/>
-          <button class="button button-search" type="submit">
+          <button class="button subscribe-button" type="submit">
             Подписаться
           </button>
       </form>
