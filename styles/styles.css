@@ -20,7 +20,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: black;
-  background-color: white;
+  background-color: #F2F2F2;
 }
 
 .visually-hidden {
@@ -86,6 +86,10 @@ body {
   padding: 0;
 }
 
+.page-header {
+  background-color: #fff;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -97,12 +101,16 @@ body {
   text-decoration: none;
 }
 
+.main-index {
+  background-color: #fff;
+}
+
 .hero {
   color: black;
   background-color: rgb(110, 104, 104);
   background-image: url("../images/index/divider.svg"),
     url("../images/index/sedona-mountains.jpg");
-  background-position: bottom, center;
+  background-position: center bottom, center;
   background-size: contain, cover;
   background-repeat: no-repeat;
   height: 485px;
@@ -114,9 +122,9 @@ body {
   margin: 0 auto;
 }
 
-.advantages h2,
-.services h2,
-.search h2 {
+.advantages .title,
+.services .title,
+.search .title {
   color: black;
   font-weight: 700;
   font-size: 30px;
@@ -196,7 +204,7 @@ body {
   background-color: rgb(110, 104, 104);
 }
 
-.subscribe h2 {
+.subscribe .title {
   color: white;
   font-weight: 700;
   font-size: 30px;
@@ -225,6 +233,10 @@ body {
   background: #F2F2F2;
 }
 
+.page-footer {
+  background-color: #fff;
+}
+
 .phone {
   font-size: 40px;
   line-height: 40px;
@@ -241,10 +253,14 @@ body {
   text-decoration: none;
 }
 
+.main-catalog {
+  background-color: #fff;
+}
+
 .filters {
   background-image: url("../images/catalog/filter-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width: 1200px;
   background-color: rgb(110, 104, 104);
 }
@@ -278,7 +294,7 @@ body {
   color: white;
 }
 
-.catalog h2{
+.catalog .title{
   color: black;
   font-weight: 700;
   font-size: 30px;
@@ -348,7 +364,7 @@ body {
   color: black;
 }
 
-.subscribe-catalog h2{
+.subscribe-catalog .title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -363,26 +379,25 @@ body {
   text-align: center;
 }
 
-.vk-icon {
+.icon {
   display: block;
+  background-repeat: no-repeat;
+}
+
+.vk-icon {
   width: 24px;
   height: 14px;
   background-image: url("../images/footer/vk.svg");
-  background-repeat: no-repeat;
 }
 
 .telegram-icon {
-  display: block;
   width: 18px;
   height: 16px;
   background-image: url("../images/footer/telegram.svg");
-  background-repeat: no-repeat;
 }
 
 .youtube-icon {
-  display: block;
   width: 22px;
   height: 17px;
   background-image: url("../images/footer/youtube.svg");
-  background-repeat: no-repeat;
 }
