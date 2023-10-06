@@ -354,13 +354,13 @@ body {
   background-color: #82B3D3;
 }
 
-.pagination-item:first-child .pagination-link {
+.is-active {
   background-color: #F2F2F2;
   color: black;
 }
 
-.pagination-item:nth-child(5) .pagination-link {
-  background-color: white;
+.pagination-dots {
+  background-color: #FFFFFF;
   color: black;
 }
 
