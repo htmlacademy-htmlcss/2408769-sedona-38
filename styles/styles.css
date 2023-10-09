@@ -32,7 +32,10 @@ body {
   background-color: #F2F2F2;
 }
 
-.page-header, .main-index, .page-footer {
+.page-header,
+.main-index,
+.page-footer,
+.main-catalog {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -82,7 +85,13 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.button-apply, .button-favorites {
+.button-apply {
+    background-color: #82B3D3;
+    border-width: 0;
+    margin-bottom: 32px;
+}
+
+.button-favorites {
   background-color: #82B3D3;
   border-width: 0;
 }
@@ -427,17 +436,16 @@ body {
   background-image: url("../images/footer/youtube.svg");
 }
 
-
-.main-catalog {
-  background-color: #fff;
+.filters-header-title {
+  margin: 0;
 }
 
 .filters {
   background-image: url("../images/catalog/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1200px;
   background-color: rgb(110, 104, 104);
+  padding: 35px 70px 70px 70px;
 }
 
 .filters-header-title {
@@ -452,16 +460,50 @@ body {
   color: white;
 }
 
-.catalog-filter-list {
-  list-style: none;
+.catalog-filter {
+  display: flex;
 }
 
-.catalog-filter-title {
+.left-filter {
+  display: flex;
+  margin-right: auto;
+}
+
+.infrastrucure,
+.price-range {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 70px;
+}
+
+.infrastrucure-list,
+.hometypes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.infrastrucure-title,
+.hometypes-title,
+.price-range-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
   color: white;
+  margin-bottom: 32px;
+}
+
+.hometypes {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filters-button {
+  margin-top: 56px;
+  width: 203px;
 }
 
 .control {
