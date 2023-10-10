@@ -58,6 +58,11 @@ body {
   overflow: hidden;
 }
 
+.custom-br::after {
+  content: "\A";
+  white-space: pre;
+}
+
 .button {
   display: inline-block;
   font-weight: 700;
@@ -171,7 +176,7 @@ body {
 
 .hero {
   color: black;
-  background-color: rgb(110, 104, 104);
+  background-color: #83b3d31f;
   background-image: url("../images/index/divider.svg"),
     url("../images/index/sedona-mountains.jpg");
   background-position: center bottom, center;
@@ -205,6 +210,11 @@ body {
   margin-bottom: 20px;
 }
 
+.advantages .title,
+.services .title {
+  padding: 0 100px;
+}
+
 .advantages .title{
   margin-bottom: 25px;
 }
@@ -226,6 +236,11 @@ body {
   margin: 0;
 }
 
+.advantages-main-description,
+.services-main-description {
+  padding: 0 100px;
+}
+
 .advantages-item:first-child,
 .advantages-item:last-child {
   display: flex;
@@ -234,6 +249,10 @@ body {
 .item-text-box {
   width: 400px;
   height: 385px;
+}
+
+.advantages-image {
+  background-color: #83b3d31f;
 }
 
 .advantages-text-wrapper {
@@ -315,7 +334,7 @@ body {
   background-image: url("../images/subscribe/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(110, 104, 104);
+  background-color: #83b3d31f;
   text-align: center;
   padding: 96px 258px 104px;
 }
@@ -424,7 +443,7 @@ body {
   background-image: url("../images/catalog/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(110, 104, 104);
+  background-color: #83b3d31f;
   padding: 35px 70px 70px 70px;
 }
 
@@ -583,15 +602,16 @@ body {
   padding: 0;
   margin: 0;
   margin-top: 40px;
-
 }
 
 .pagination-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 0 8px;
+  box-sizing: border-box;
   background-color: #82B3D3;
   border-radius: 4px;
   font-size: 20px;
