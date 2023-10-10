@@ -36,10 +36,10 @@
           </a>
         </li>
       </ul>
-      <div class="button-wrapper">
-        <a class="button" href="#">Хочу сюда!</a>
-      </div>
     </nav>
+    <div class="button-wrapper">
+      <a class="button" href="#">Хочу сюда!</a>
+    </div>
   </header>
   <main class="main-catalog main-container" data-test="main">
     <section class="filters" data-test="filter">
@@ -127,24 +127,28 @@
       </form>
     </section>
     <section class="catalog" data-test="catalog">
-      <h2 class="title">Найдено гостиниц: 38</h2>
-      <select class="select-control" aria-label="Сортировка">
-        <option value="cheap">Сначала дешёвое</option>
-        <option value="popular">Сначала популярное</option>
-        <option value="expensive">Сначала дорогое</option>
-      </select>
-      <button type="submit" class="button-view button-view-active" name="tile">
-        <img class="select-control-icon" alt="Показать карточки" src="images/catalog/tile.svg" width="20" height="20" />
-        <span class="visually-hidden">Показать карточки</span>
-      </button>
-      <button type="submit" class="button-view" name="slide">
-        <img class="select-control-icon" alt="Cлайд-шоу" src="images/catalog/slideshow.svg" width="20" height="20" />
-        <span class="visually-hidden">Cлайд-шоу</span>
-      </button>
-      <button type="submit" class="button-view" name="list">
-        <img class="select-control-icon" alt="Показать список" src="images/catalog/list.svg" width="20" height="20" />
-        <span class="visually-hidden">Показать список</span>
-      </button>
+      <div class="catalog-up">
+        <h2 class="title">Найдено гостиниц: 38</h2>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="popular">Сначала популярное</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+        <div class="select-control-block">
+          <button type="submit" class="button-view button-view-active" name="tile">
+            <img class="select-control-icon" alt="Показать карточки" src="images/catalog/tile.svg" width="20" height="20" />
+            <span class="visually-hidden">Показать карточки</span>
+          </button>
+          <button type="submit" class="button-view" name="slide">
+            <img class="select-control-icon" alt="Cлайд-шоу" src="images/catalog/slideshow.svg" width="20" height="20" />
+            <span class="visually-hidden">Cлайд-шоу</span>
+          </button>
+          <button type="submit" class="button-view" name="list">
+            <img class="select-control-icon" alt="Показать список" src="images/catalog/list.svg" width="20" height="20" />
+            <span class="visually-hidden">Показать список</span>
+          </button>
+        </div>
+      </div>
       <ul class="hotel-list">
         <li class="hotel-item">
           <article class="hotel-card">
@@ -261,9 +265,11 @@
       </ul>
     </section>
     <section class="subscribe-catalog" data-test="subscribe">
-      <h2 class="title">Подпишитесь на рассылку</h2>
-      <p class="subsribe-catalog-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="subscribe-catalog-text">
+        <h2 class="title">Подпишитесь на рассылку</h2>
+        <p class="subsribe-catalog-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+      </div>
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="email-field" placeholder="Ваш e-mail" type="email" name="search-email" required/>
           <button class="button subscribe-button" type="submit">
             Подписаться
