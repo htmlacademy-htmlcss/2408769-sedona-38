@@ -179,13 +179,13 @@ body {
 
 .hero {
   color: black;
-  background-color: #83b3d31f;
+  background-color: #959799;
   background-image: url("../images/index/divider.svg"),
     url("../images/index/sedona-mountains.jpg");
   background-position: center bottom, center;
   background-size: contain, cover;
   background-repeat: no-repeat;
-  height: 485px;
+  min-height: 485px;
 }
 
 .hero img {
@@ -195,8 +195,8 @@ body {
   padding-top: 51px;
 }
 
-.advantages-main-text {
-  padding: 69px 0;
+.advantages .section-head {
+  padding: 69px 69px;
   margin-bottom: 21px;
 }
 
@@ -211,11 +211,6 @@ body {
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
-}
-
-.advantages .title,
-.services .title {
-  padding: 0 100px;
 }
 
 .advantages .title{
@@ -241,11 +236,6 @@ body {
   margin: 0;
 }
 
-.advantages-main-description,
-.services-main-description {
-  padding: 0 100px;
-}
-
 .advantages-item:first-child,
 .advantages-item:last-child {
   display: flex;
@@ -258,7 +248,7 @@ body {
 }
 
 .advantages-image {
-  background-color: #83b3d31f;
+  background-color: #959799;
 }
 
 .advantages-text-wrapper {
@@ -318,8 +308,8 @@ body {
   color: white;
 }
 
-.services-main-text {
-  padding: 64px 0;
+.services .section-head {
+  padding: 64px 64px;
 }
 
 .services-text-wrapper {
@@ -345,9 +335,9 @@ body {
   padding: 96px 307px;
 }
 
-.search-main-text,
-.subscribe-main-text,
-.subscribe-catalog-text {
+.search .section-head,
+.subscribe .section-head,
+.subscribe-catalog .section-head {
   margin-bottom: 54px;
 }
 
@@ -355,7 +345,7 @@ body {
   background-image: url("../images/subscribe/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #83b3d31f;
+  background-color: #959799;
   text-align: center;
   padding: 96px 258px 104px;
 }
@@ -417,7 +407,7 @@ body {
 }
 
 .footer-phone {
-  width: 720px;
+  max-width: 720px;
   margin: 0 auto;
   text-align: center;
   align-self: center;
@@ -441,32 +431,40 @@ body {
   display: block;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 13px 10px;
 }
 
 .vk-icon {
   width: 24px;
   height: 14px;
   background-image: url("../images/footer/vk.svg");
+  padding: 13px 10px;
 }
 
 .telegram-icon {
   width: 18px;
   height: 16px;
   background-image: url("../images/footer/telegram.svg");
+  padding: 13px 10px;
 }
 
 .youtube-icon {
   width: 22px;
   height: 17px;
   background-image: url("../images/footer/youtube.svg");
+  padding: 13px 10px;
+}
+
+.home-icon {
+  width: 13px;
+  height: 15px;
+  background-image: url("../images/catalog/home-breadcrumbs.svg");
 }
 
 .filters {
   background-image: url("../images/catalog/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #83b3d31f;
+  background-color: #959799;
   padding: 35px 70px 70px 70px;
 }
 
@@ -485,14 +483,6 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
-}
-
-.home-icon {
-  display: block;
-  width: 13px;
-  height: 15px;
-  background-image: url("../images/catalog/home-breadcrumbs.svg");
-  background-repeat: no-repeat;
 }
 
 .breadcrumbs li::after {
