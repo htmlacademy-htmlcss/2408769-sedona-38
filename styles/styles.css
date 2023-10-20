@@ -32,8 +32,6 @@ body {
   background-color: #F2F2F2;
 }
 
-input {outline:none;}
-
 .page-header,
 .main-index,
 .page-footer,
@@ -66,7 +64,9 @@ input {outline:none;}
 }
 
 .button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -267,6 +267,7 @@ input {outline:none;}
 
 .advantages-image {
   background-color: #959799;
+  object-fit: contain;
 }
 
 .advantages-text-wrapper {
@@ -603,7 +604,6 @@ input {outline:none;}
   display: flex;
   gap: 2px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .price-range-label {
@@ -624,6 +624,7 @@ input {outline:none;}
   line-height: 24px;
   padding: 0;
   border: 0;
+  outline: none;
 }
 
 .filters-button {
@@ -685,20 +686,23 @@ input {outline:none;}
 
 .hotel-card {
   border: 1px solid #E6E6E6;
-  display: grid;
-  grid-template-columns: repeat(2, 140px);
-  gap: 16px 20px;
+  display: flex;
+  flex-direction: column;
   padding: 19px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.hotel-card-image {
+  display: block;
 }
 
 .hotel-card-title {
-  margin: 0;
+  margin: 16px 0;
 }
 
 .hotel-card-link {
-  grid-column: 1 / -1;
-  display: grid;
-  gap: 20px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -706,8 +710,11 @@ input {outline:none;}
   color: #333;
 }
 
-.hotel-card .price {
-  grid-column: 2/3;
+.hotel-card-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 16px;
   text-align: right;
   color: #333;
 }
@@ -716,6 +723,7 @@ input {outline:none;}
   display: grid;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
+  margin-top: auto;
 }
 
 .star-wrapper {
