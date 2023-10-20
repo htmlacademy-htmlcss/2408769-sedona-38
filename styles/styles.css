@@ -32,6 +32,8 @@ body {
   background-color: #F2F2F2;
 }
 
+input {outline:none;}
+
 .page-header,
 .main-index,
 .page-footer,
@@ -591,6 +593,37 @@ body {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.price-range {
+  max-width: 286px;
+}
+
+.cost-regulator {
+  display: flex;
+  gap: 2px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.price-range-label {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: white;
+}
+
+.price-range-label span {
+  color: black;
+  opacity: 0.3;
+}
+
+.price-range-label input {
+  width: 100%;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0;
+  border: 0;
 }
 
 .filters-button {
