@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/index/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header class="page-header" data-test="header">
@@ -53,7 +54,7 @@
           <p class="advantages-main-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <ul class="advantages-list">
-          <li class="advantages-item advantages-item-wide reverse-item">
+          <li class="advantages-item advantages-item-wide">
             <div class="item-text-box">
               <div class="advantages-text-wrapper">
                 <h3 class="advantages-title">Настоящий городок</h3>
@@ -79,9 +80,9 @@
           <li class="advantages-item">
             <div class="item-text-box">
               <div class="advantages-text-wrapper">
-                <h3 class="advantages-title">Красивая дорога</h3>
+                <h3 class="advantages-title">Красивая<span class="custom-br"></span> дорога</h3>
                 <p class="advantages-description">
-                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                  Ехать в Седону из Лас-Вегаса<span class="custom-br"></span> совсем не скучно!
                 </p>
               </div>
             </div>
@@ -89,17 +90,17 @@
           <li class="advantages-item">
             <div class="item-text-box">
               <div class="advantages-text-wrapper">
-                <h3 class="advantages-title">Мало туристов</h3>
+                <h3 class="advantages-title">Мало<span class="custom-br"></span> туристов</h3>
                 <p class="advantages-description">
                   Большинство едет в Гранд Каньон и толпится там
                 </p>
               </div>
             </div>
           </li>
-            <li class="advantages-item advantages-item-wide">
+            <li class="advantages-item advantages-item-wide reverse-item">
               <div class="item-text-box">
                 <div class="advantages-text-wrapper">
-                  <h3 class="advantages-title title-white">Там есть мост дьявола</h3>
+                  <h3 class="advantages-title title-white">Там есть<span class="custom-br"></span> мост дьявола</h3>
                   <p class="advantages-description description-white">
                     Да, по нему можно пройти! Если вы осмелитесь, разумеется
                   </p>
@@ -164,7 +165,7 @@
         </div>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="email-field" placeholder="Ваш e-mail" type="email" name="search-email" required/>
-            <button class="button subscribe-button" type="submit">
+            <button class="button subscribe-button" type="submit" disabled>
               Подписаться
             </button>
         </form>
@@ -173,17 +174,29 @@
     <footer class="page-footer" data-test="footer" >
       <ul class="social-list">
           <li class="social-item">
-            <a class="icon vk-icon" href="https://vk.com/htmlacademy" title="Наш Вконтакте">
+            <a class="social-item-icon" href="https://vk.com/htmlacademy" title="Наш Вконтакте">
+              <svg aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#83B3D3" fill-rule="evenodd" d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17
+                0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37
+                1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" /></svg>
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="icon telegram-icon" href="https://t.me/htmlacademy" title="Наш Telegram">
+            <a class="social-item-icon" href="https://t.me/htmlacademy" title="Наш Telegram">
+              <svg focusable="false" width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.2853 0.0992597L1.34073 6.24776C0.252584 6.68481 0.258879 7.29184 1.14109 7.56253L5.23469 8.83953L14.7061 2.8637C15.1539 2.59121
+                15.5631 2.7378 15.2268 3.03636L7.55308 9.96185H7.55128L7.55308 9.96275L7.2707 14.1823C7.68438 14.1823 7.86693 13.9925 8.09895 13.7686L10.0873
+                11.8351L14.2232 14.89C14.9858 15.31 15.5334 15.0941 15.7232 14.1841L18.4382 1.38885C18.7161 0.274623 18.0128 -0.229883 17.2853 0.0992597Z" fill="#83B3D3"/>
+                </svg>
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="icon youtube-icon" href="https://www.youtube.com/user/htmlacademyru" title="Наш канал на YouTube">
+            <a class="social-item-icon" href="https://www.youtube.com/user/htmlacademyru" title="Наш канал на YouTube">
+              <svg aria-hidden="true" focusable="false" width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.1072 0.5H3.67437C1.81368 0.5 0.500244 2.09375 0.500244 3.9V13.9937C0.500244 15.9062 1.81368 17.5 3.67437 17.5H19.3261C20.9679 17.5
+                22.5002 15.9062 22.5002 14.1V3.9C22.2813 2.09375 20.9679 0.5 19.1072 0.5ZM8.16194 13.0375V4.9625L15.4953 9L8.16194 13.0375Z" fill="#83B3D3"/>
+                </svg>
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
