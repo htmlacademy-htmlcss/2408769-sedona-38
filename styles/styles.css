@@ -164,7 +164,7 @@ body {
 }
 
 .button-card {
-  padding: 8px 20px;
+  padding: 8px 18px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -193,6 +193,7 @@ body {
   padding: 14px 12px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  cursor: pointer;
 }
 
 .button-view:hover {
@@ -237,10 +238,12 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  max-width: 550px;
 }
 
 .navigation-user {
   margin-left: auto;
+  max-width: 140px;
 }
 
 .navigation-link-search,
@@ -383,7 +386,8 @@ body {
 .advantages-image {
   background-color: #959799;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
+  height: 100%;
 }
 
 .advantages-item:nth-child(even) .item-text-box {
@@ -416,7 +420,13 @@ body {
   margin: 0;
 }
 
-.advantages-item .advantages-title::after {
+.advantages-description {
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+.advantages-item .advantages-description::before {
   display: block;
   content: "";
   width: 60px;
@@ -425,14 +435,8 @@ body {
   margin: 30px auto;
 }
 
-.advantages-item.advantages-item-wide .advantages-title::after {
+.advantages-item.advantages-item-wide .advantages-description::before {
   background-color: #FFFFFF4D;
-}
-
-.advantages-description {
-  color: #333;
-  text-align: center;
-  margin: 0;
 }
 
 .services-item:nth-child(odd) {
@@ -533,6 +537,15 @@ body {
   background: #F2F2F2;
 }
 
+.email-field:hover {
+  background-color: #E6E6E6;
+}
+
+.email-field:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
 .page-footer {
   display: flex;
   box-sizing: border-box;
@@ -546,6 +559,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 5px 0;
+  max-width: 200px;
 }
 
 .social-item-icon {
@@ -607,6 +621,8 @@ body {
 
 .footer-logo-link {
   color: black;
+  display: block;
+  height: 34px;
 }
 
 .footer-logo-link:hover,
@@ -637,6 +653,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -667,16 +684,16 @@ body {
 }
 
 .breadcrumbs-link,
-.breadcrumbs-link:focus {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:focus {
   color: white;
 }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:active {
-color: rgba(255, 255, 255, 0.3);
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter {
@@ -818,6 +835,7 @@ color: rgba(255, 255, 255, 0.3);
   background-image: url("../images/catalog/select-arrow.svg");
   background-position: right 20px center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .select-control:hover,
@@ -944,7 +962,8 @@ color: rgba(255, 255, 255, 0.3);
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 40px;
+  border-top: 1px solid #E6E6E6;
+  padding-top: 39px;
 }
 
 .pagination-link {
