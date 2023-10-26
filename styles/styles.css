@@ -206,6 +206,7 @@ body {
 
 .button-view:focus {
   border: 2px solid #68A2CA;
+  outline: none;
 }
 
 .button-view:active,
@@ -877,6 +878,10 @@ body {
 .select-control:hover,
 .select-control:focus {
   border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  outline: none;
 }
 
 .select-control:disabled {
