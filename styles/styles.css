@@ -14,7 +14,7 @@
   font-display: swap;
 }
 
-*:focus {
+*:focus-visible {
   outline: 3px solid #82B3D3;
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .button:hover,
-.button:focus  {
+.button:focus-visible  {
   background-color: #615048;
 }
 
@@ -120,11 +120,11 @@ body {
 }
 
 .subscribe-button:hover,
-.subscribe-button:focus,
+.subscribe-button:focus-visible,
 .button-apply:hover,
-.button-apply:focus,
+.button-apply:focus-visible,
 .button-favorites:hover,
-.button-favorites:focus {
+.button-favorites:focus-visible {
   background-color: #68A2CA;
 }
 
@@ -151,7 +151,7 @@ body {
   opacity: 0.6;
 }
 
-.button-reset:focus {
+.button-reset:focus-visible {
   outline: none;
   background-color: transparent;
   border: 3px solid #83B3D3;
@@ -182,7 +182,7 @@ body {
 }
 
 .button-favorites-active:hover,
-.button-favorites-active:focus{
+.button-favorites-active:focus-visible {
   background-color: #6C9E42;
 }
 
@@ -204,7 +204,7 @@ body {
   border: 2px solid black;
 }
 
-.button-view:focus {
+.button-view:focus-visible {
   border: 2px solid #68A2CA;
   outline: none;
 }
@@ -217,7 +217,6 @@ body {
 
 .page-header {
   display: flex;
-  flex-wrap: wrap;
   box-sizing: border-box;
   padding: 0 70px;
 }
@@ -279,15 +278,17 @@ body {
 }
 
 .navigation-link:not(.navigation-link-currect):hover,
-.navigation-link:not(.navigation-link-currect):focus,
+.navigation-link:not(.navigation-link-currect):focus-visible,
 .navigation-link-search:hover,
-.navigation-link-search:focus,
+.navigation-link-search:focus-visible,
 .navigation-link-favorite:hover,
-.navigation-link-favorite:focus,
+.navigation-link-favorite:focus-visible,
 .footer-logo-link:hover,
-.footer-logo-link:focus,
+.footer-logo-link:focus-visible,
 .footer-phone .phone:hover,
-.footer-phone .phone:focus {
+.footer-phone .phone:focus-visible,
+.hotel-card-link:hover,
+.hotel-card-link:focus-visible {
   color: #756157;
 }
 
@@ -295,7 +296,8 @@ body {
 .navigation-link-search:active,
 .navigation-link-favorite:active,
 .footer-logo-link:active,
-.footer-phone .phone:active {
+.footer-phone .phone:active,
+.hotel-card-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -328,6 +330,9 @@ body {
 }
 
 .button-wrapper {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
   padding: 14px 0;
   width: 160px;
 }
@@ -404,6 +409,7 @@ body {
 .item-text-box {
   width: 400px;
   min-height: 385px;
+  height: 100%;
   text-align: center;
   display: flex;
   box-sizing: border-box;
@@ -626,7 +632,7 @@ body {
 }
 
 .social-item-icon:hover,
-.social-item-icon:focus {
+.social-item-icon:focus-visible {
   color: #68A2CA;
 }
 
@@ -790,16 +796,16 @@ body {
   content: "";
 }
 
-.control:hover .control-mark {
+.control-input:hover + .control-mark  {
   background-color: white;
   opacity: 0.6;
 }
 
-.control:focus .control-mark {
+.control-input:focus-visible + .control-mark {
   outline: 3px solid #83B3D3;
 }
 
-.control:active .control-mark {
+.control-input:active + .control-mark {
   outline: 2px solid #83B3D3;
   opacity: 0.3;
 }
@@ -815,6 +821,7 @@ body {
   border: none;
   padding: 0;
   margin: 0;
+  margin-right: 70px;
 }
 
 .infrastrucure,
@@ -927,6 +934,7 @@ body {
   height: 49px;
   width: 290px;
   border: 2px solid #E5E5E5;
+  border-radius: 4px;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 40px;
@@ -985,16 +993,25 @@ body {
   display: block;
 }
 
+.hotel-card-image:hover {
+  opacity: 0.9;
+}
+
+.hotel-card-image:active {
+  opacity: 0.6;
+}
+
 .hotel-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #333;
   margin: 16px 0;
 }
 
 .hotel-card-link {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
   text-decoration: none;
-  color: #333;
+  color: black;
 }
 
 .hotel-card-price {
@@ -1005,10 +1022,9 @@ body {
   color: #333;
 }
 
-.hotel-card .price {
-  width: max-content;
-  flex-shrink: 0;
-}
+ .hotel-card .price {
+    overflow-wrap: anywhere;
+ }
 
 .card-wrapper-btn {
   display: grid;
@@ -1044,7 +1060,7 @@ body {
 .hotel-card-rating {
   background-color: #F2F2F2;
   border-radius: 4px;
-  height: 37px;
+  min-height: 37px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1088,7 +1104,7 @@ body {
 }
 
 .pagination-link:not(.is-active, .pagination-dots):hover,
-.pagination-link:not(.is-active, .pagination-dots):focus {
+.pagination-link:not(.is-active, .pagination-dots):focus-visible {
   background-color: #68A2CA;
 }
 
@@ -1108,7 +1124,7 @@ body {
 }
 
 .pagination-link.is-active:hover,
-.pagination-link.is-active:focus,
+.pagination-link.is-active:focus-visible,
 .pagination-link.is-active:active {
   border: none;
 }
