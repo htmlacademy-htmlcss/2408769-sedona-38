@@ -242,7 +242,7 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form-search" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="label-arrival-date">
+            <label class="label-date">
               <span class="modal-title-field">Дата заезда:</span>
               <input class="modal-field modal-field-date" placeholder="Укажите дату" type="text" name="search-date" value="27 апреля 2020" required/>
               <svg class="calendar-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
@@ -251,7 +251,7 @@
                 <path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="currentColor"/>
               </svg>
             </label>
-            <label class="label-arrival-date">
+            <label class="label-date">
               <span class="modal-title-field">Дата выезда:</span>
               <input class="modal-field modal-field-date" placeholder="Укажите дату" type="text" name="search-date" value="1 сентября 2023" required/>
               <svg class="calendar-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
@@ -261,38 +261,53 @@
               </svg>
             </label>
             <div class="modal-count-wrapper">
-              <label class="label-arrival-count count-first-element">
-                <span class="modal-title-field">Взрослые:</span>
-                <div class="input-count-wrapper">
-                  <button type="button" class="button-reduce">
-                    <svg class="reduce-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3 9v2h14V9H3Z" fill="currentColor"/>
-                    </svg>
-                  </button>
-                  <input class="modal-field modal-field-count" placeholder="1" type="text" name="search-date" required/>
-                  <button type="button" class="button-add">
-                    <svg class="add-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor"/>
-                    </svg>
-                  </button>
-                </div>
-              </label>
-              <label class="label-arrival-count count-second-element">
-                <span class="modal-title-field title-field-child">Дети:</span>
-                <div class="input-count-wrapper">
-                  <button type="button" class="button-reduce">
-                    <svg class="reduce-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3 9v2h14V9H3Z" fill="currentColor"/>
-                    </svg>
-                  </button>
-                  <input class="modal-field modal-field-count" placeholder="1" type="text" name="search-date" required/>
-                  <button type="button" class="button-add">
-                    <svg class="add-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor"/>
-                    </svg>
-                  </button>
-                </div>
-              </label>
+              <span class="field-group-one">
+                <label class="label-count">
+                  <span class="modal-title-field">Взрослые:</span>
+                  <div class="input-count-wrapper">
+                    <button type="button" class="button-reduce">
+                      <svg class="reduce-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9v2h14V9H3Z" fill="currentColor"/>
+                      </svg>
+                    </button>
+                    <input class="modal-field modal-field-count" placeholder="1" type="text" name="search-date" required/>
+                    <button type="button" class="button-add">
+                      <svg class="add-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor"/>
+                      </svg>
+                    </button>
+                  </div>
+                </label>
+              </span>
+              <span class="field-group-two">
+                <span class="form-label">
+                  <label class="label-count">
+                    <span class="modal-title-field title-field-child">Дети:</span>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button">
+                        <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                          <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                          <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span></span>
+                    </span>
+                    <div class="input-count-wrapper">
+                      <button type="button" class="button-reduce">
+                        <svg class="reduce-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 9v2h14V9H3Z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                      <input class="modal-field modal-field-count" placeholder="1" type="text" name="search-date" required/>
+                      <button type="button" class="button-add">
+                        <svg class="add-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </label>
+                </span>
+              </span>
               <div class="modal-button-wrapper">
                 <button class="button modal-button">Найти</button>
               </div>
