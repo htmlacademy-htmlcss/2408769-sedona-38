@@ -711,7 +711,7 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
@@ -773,6 +773,10 @@ body {
   justify-content: space-between;
 }
 
+.label-date {
+  grid-column: 1/-1;
+}
+
 .modal-title-field {
   display: flex;
   align-items: flex-start;
@@ -804,6 +808,7 @@ body {
 }
 
 .input-wrapper {
+  position: relative;
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
@@ -811,6 +816,8 @@ body {
 }
 
 .modal-input-text {
+  position: absolute;
+  bottom: -48px;
   display: block;
   font-size: 16px;
   padding: 0 20px;
@@ -823,9 +830,9 @@ body {
   color: #FF5757;
 }
 
-.modal-count-wrapper {
+.modal-form-wrapper {
   display: grid;
-  grid-template-columns: 1fr 110px 88px 1fr 110px;
+  grid-template-columns: 137px 110px 88px 1fr 110px;
   row-gap: 48px;
 }
 
@@ -881,7 +888,7 @@ body {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   position: absolute;
   margin-top: 15px;
-  margin-left: 4px;
+  margin-left: 6px;
   left: 50%;
   transform: translateX(-50%);
   display: none;
@@ -936,8 +943,8 @@ body {
   right: 0;
 }
 
-.button-reduce:hover .reduce-icon,
-.button-add:hover .add-icon {
+.input-count-wrapper .button-reduce:hover .reduce-icon,
+.input-count-wrapper .button-add:hover .add-icon {
   opacity: 1;
 }
 
