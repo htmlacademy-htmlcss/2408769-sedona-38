@@ -18,6 +18,12 @@
   outline: 3px solid #82B3D3;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
@@ -248,7 +254,6 @@ body {
 
 .header-navigation {
   display: flex;
-  flex-wrap: wrap;
   margin-right: 20px;
   flex-grow: 1;
 }
@@ -721,7 +726,7 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
@@ -777,18 +782,17 @@ body {
 
 .modal-form-wrapper {
   display: grid;
-  grid-template-columns: 137px 110px 88px 131px 110px;
-}
-
-.label-date,
-.label-count {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  row-gap: 23px;
 }
 
 .label-date {
-  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.label-count {
+  display: flex;
+  align-items: center;
 }
 
 .modal-title-field {
@@ -802,13 +806,14 @@ body {
 
 .input-date-wrapper {
   grid-column: 2/-1;
-  position: relative;
-  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 23px;
+}
+
+.position-date-wrapper {
+  position: relative;
 }
 
 .input-date-wrapper .calendar-svg {
@@ -842,35 +847,51 @@ body {
   color: #FF5757;
 }
 
-.label-count-first {
+.input-wrapper-wide {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.input-wrapper-double {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.input-wrapper-small {
+  display: grid;
+  grid-template-columns: 137px 111px;
+
+}
+
+.input-wrapper-small.input-wrapper-small-tooltip {
+  grid-template-columns: 131px 111px;
+}
+
+.input-wrapper-small-first {
   grid-column: 1/2;
 }
 
-.label-count-second {
-  grid-column: 4/5;
-}
-
-.input-count-first {
-  grid-column: 2/3;
-}
-
-.input-count-second {
-  grid-column: 5/6;
+.input-wrapper-small-second {
+  grid-column: 3/4;
 }
 
 .input-count-wrapper {
   display: flex;
   align-items: center;
   position: relative;
+  width: 110px;
 }
 
 .tooltip {
-  margin-left: 59px;
-  margin-top: 11px;
-  width: 16px;
-  height: 16px;
+  width: 26px;
+  height: 26px;
   z-index: 2;
-  position: absolute;
+  flex-shrink: 0;
+  margin-left: 10px;
+  margin-right: 5px;
+  position: relative;
 }
 
 .tooltip-toggle {
@@ -896,13 +917,12 @@ body {
   border-radius: 10px;
   background-color: #333333;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 20px 22px 22px;
   min-width: 256px;
   box-sizing: border-box;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   position: absolute;
   margin-top: 15px;
-  margin-left: 6px;
   left: 50%;
   transform: translateX(-50%);
   display: none;
@@ -974,7 +994,7 @@ body {
 
 .modal-button-wrapper {
   grid-column: 1/-1;
-  margin-top: 48px;
+  margin-top: 25px;
   display: grid;
   gap: 48px;
 }
