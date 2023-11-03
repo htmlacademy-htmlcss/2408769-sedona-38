@@ -627,10 +627,11 @@ body {
 }
 
 .page-footer {
-  display: flex;
   box-sizing: border-box;
-  align-items: center;
   padding: 40px 70px 30px;
+  display: grid;
+  grid-template-columns: 188px 720px 152px;
+  grid-auto-flow: row;
 }
 
 .social-list {
@@ -670,6 +671,7 @@ body {
   margin: 0 auto;
   text-align: center;
   align-self: center;
+  gap: 10px;
 }
 
 .footer-phone .phone {
@@ -679,6 +681,7 @@ body {
   text-decoration: none;
   color: black;
   text-align: center;
+  margin-right: 10px;
 }
 
 .footer-phone .phone:active {
@@ -686,8 +689,11 @@ body {
 }
 
 .footer-logo {
-  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   align-self: center;
+  justify-self: end;
 }
 
 .page-footer-logo {
@@ -772,7 +778,6 @@ body {
 .modal-form-wrapper {
   display: grid;
   grid-template-columns: 137px 110px 88px 131px 110px;
-  /* grid-auto-rows: 48px; */
 }
 
 .label-date,
@@ -795,7 +800,7 @@ body {
   padding: 12px 0;
 }
 
-.input-wrapper {
+.input-date-wrapper {
   grid-column: 2/-1;
   position: relative;
   margin-left: auto;
@@ -803,16 +808,17 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 23px;
 }
 
-.input-wrapper .calendar-svg {
+.input-date-wrapper .calendar-svg {
   color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 16px;
   right: 22px;
 }
 
-.input-wrapper .calendar-svg:hover {
+.input-date-wrapper .calendar-svg:hover {
   color: rgba(0, 0, 0, 1);
   cursor: pointer;
 }
@@ -829,7 +835,6 @@ body {
   font-size: 16px;
   padding: 0 20px;
   margin-top: 4px;
-  margin-bottom: 23px;
   color: #333;
 }
 
