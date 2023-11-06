@@ -336,7 +336,7 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.navigation-link-currect::before {
+.navigation-link::before {
   position: absolute;
   bottom: -1px;
   right: 16px;
@@ -344,6 +344,14 @@ body {
   height: 2px;
   background-color: #756257;
   content: "";
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.navigation-link-currect::before,
+.navigation-link:hover::before,
+.navigation-link:focus-visible::before {
+  width: calc(100% - 32px);
 }
 
 .fovorite-count {
