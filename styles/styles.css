@@ -415,7 +415,6 @@ body {
   margin-bottom: 25px;
 }
 
-
 .advantages-list,
 .services-list {
   display: grid;
@@ -435,14 +434,10 @@ body {
   margin: 0;
 }
 
-.advantages-item:first-child,
-.advantages-item:last-child {
+.advantages-item.advantages-item-wide {
+  grid-column: 1/-1;
   display: flex;
   flex-wrap: wrap;
-}
-
-.advantages-item-wide {
-  grid-column: 1/-1;
 }
 
 .item-text-box {
@@ -1019,9 +1014,11 @@ body {
 
 .select-control-block {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   gap: 8px;
+  width: 160px;
 }
 
 .select-control {
@@ -1178,6 +1175,7 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 8px;
   list-style: none;
@@ -1348,6 +1346,7 @@ body {
   text-transform: capitalize;
   margin: 0;
   padding: 12px 0;
+  overflow-wrap: anywhere;
 }
 
 .input-date-wrapper {
