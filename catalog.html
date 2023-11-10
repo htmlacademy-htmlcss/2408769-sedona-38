@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <div class="page-wrapper">
       <header class="page-header" data-test="header">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип сайта Седона" src="images/header/logo.svg" width="140" height="70">
+          <img class="page-header-logo" alt="Логотип сайта Седона." src="images/header/logo.svg" width="140" height="70">
         </a>
         <nav class="header-navigation">
           <ul class="navigation-list">
@@ -186,7 +187,7 @@
             <li class="hotel-item">
               <article class="hotel-card">
                 <a href="#" tabindex="-1">
-                  <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212"  alt="Гостиница Amara Resort & Spa">
+                  <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212"  alt="Гостиница Amara Resort & Spa.">
                 </a>
                 <h3 class="hotel-card-title">
                   <a class="hotel-card-link" href="#" tabindex="-1">Amara Resort & Spa</a>
@@ -212,7 +213,7 @@
             <li class="hotel-item">
               <article class="hotel-card">
                 <a href="#" tabindex="-1">
-                  <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212"  alt="Гостиница Amara Resort & Spa">
+                  <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212"  alt="Гостиница Villas at Poco Diablo.">
                 </a>
                 <h3 class="hotel-card-title">
                   <a class="hotel-card-link" href="#" tabindex="-1">Villas at Poco Diablo</a>
@@ -238,7 +239,7 @@
             <li class="hotel-item">
               <article class="hotel-card">
                 <a href="#" tabindex="-1">
-                  <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212"  alt="Гостиница Amara Resort & Spa">
+                  <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212"  alt="Гостиница Desert Quail Inn.">
                 </a>
                 <h3 class="hotel-card-title">
                   <a class="hotel-card-link" href="#" tabindex="-1">Desert Quail Inn</a>
@@ -264,7 +265,7 @@
             <li class="hotel-item">
               <article class="hotel-card">
                 <a href="#" tabindex="-1">
-                  <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212"  alt="Гостиница Amara Resort & Spa">
+                  <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212"  alt="Гостиница GreenTree Inn.">
                 </a>
                 <h3 class="hotel-card-title">
                   <a class="hotel-card-link" href="#" tabindex="-1">GreenTree Inn</a>
@@ -315,8 +316,9 @@
             <p class="subsribe-catalog-description">Только полезная информация и никакого спама,<span class="custom-br"></span> честное бойскаутское!</p>
           </div>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="email-field" placeholder="Ваш e-mail" type="email" name="search-email" required>
-              <button class="button subscribe-button" type="submit">Подписаться</button>
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="email-field" placeholder="Ваш e-mail" type="email" name="search-email" id="newsletter-email" required>
+            <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
