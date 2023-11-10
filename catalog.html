@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <div class="page-wrapper">
       <header class="page-header" data-test="header">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип сайта Седона" src="images/header/logo.svg" width="140" height="70" />
+          <img class="page-header-logo" alt="Логотип сайта Седона." src="images/header/logo.svg" width="140" height="70">
         </a>
         <nav class="header-navigation">
           <ul class="navigation-list">
@@ -40,7 +41,7 @@
                   6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
                 </svg>
                 <span class="visually-hidden">Избранное</span>
-                <span class="fovorite-count">12</span>
+                <span class="favorite-count">12</span>
               </a>
             </li>
           </ul>
@@ -186,7 +187,7 @@
             <li class="hotel-item">
               <article class="hotel-card">
                 <a href="#" tabindex="-1">
-                  <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212"  alt="Гостиница Amara Resort & Spa"/>
+                  <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212"  alt="Гостиница Amara Resort & Spa.">
                 </a>
                 <h3 class="hotel-card-title">
                   <a class="hotel-card-link" href="#" tabindex="-1">Amara Resort & Spa</a>
@@ -212,7 +213,7 @@
             <li class="hotel-item">
               <article class="hotel-card">
                 <a href="#" tabindex="-1">
-                  <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212"  alt="Гостиница Amara Resort & Spa"/>
+                  <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212"  alt="Гостиница Villas at Poco Diablo.">
                 </a>
                 <h3 class="hotel-card-title">
                   <a class="hotel-card-link" href="#" tabindex="-1">Villas at Poco Diablo</a>
@@ -238,7 +239,7 @@
             <li class="hotel-item">
               <article class="hotel-card">
                 <a href="#" tabindex="-1">
-                  <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212"  alt="Гостиница Amara Resort & Spa"/>
+                  <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212"  alt="Гостиница Desert Quail Inn.">
                 </a>
                 <h3 class="hotel-card-title">
                   <a class="hotel-card-link" href="#" tabindex="-1">Desert Quail Inn</a>
@@ -264,7 +265,7 @@
             <li class="hotel-item">
               <article class="hotel-card">
                 <a href="#" tabindex="-1">
-                  <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212"  alt="Гостиница Amara Resort & Spa"/>
+                  <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212"  alt="Гостиница GreenTree Inn.">
                 </a>
                 <h3 class="hotel-card-title">
                   <a class="hotel-card-link" href="#" tabindex="-1">GreenTree Inn</a>
@@ -315,8 +316,9 @@
             <p class="subsribe-catalog-description">Только полезная информация и никакого спама,<span class="custom-br"></span> честное бойскаутское!</p>
           </div>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="email-field" placeholder="Ваш e-mail" type="email" name="search-email" required/>
-              <button class="button subscribe-button" type="submit">Подписаться</button>
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="email-field" placeholder="Ваш e-mail" type="email" name="search-email" id="newsletter-email" required>
+            <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -357,7 +359,7 @@
           <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="footer-logo">
-          <a class="footer-logo-link" href="https://htmlacademy.ru/">
+          <a class="footer-logo-link" href="https://htmlacademy.ru/" aria-label="Логотип htmlacademy">
             <svg aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill="currentColor" d="M0 13.72v2.6h2.5v-2.6H0ZM11.6 5.32c-1.6 0-2.8.7-3.6 1.7h-.1V.82h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6
               5.62h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 5.42c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1
